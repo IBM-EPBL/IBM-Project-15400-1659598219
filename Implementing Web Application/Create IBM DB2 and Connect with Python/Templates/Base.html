@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1"> 
+<!--Bootstrap CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../static/sheets/styles1.css">
+<link rel="stylesheet" type="text/css" href="../static/sheets/style2.css">
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+{% endblock %}
+
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">News Tracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Profile</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="base.html">Fetch News</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signin.html">Sign In</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+<div class="header">
+  <div class="bg-image"></div><div class="bg-text">
+    <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/img1.jpg" alt="Avatar" class="avatar">
+    <p><marquee><b><i>More News! More Often!  Move Closer To Tour World!</i></b></marquee></p>
+</div>
+
+  
+  <div class="row">
+    <div class="column nature">
+      <div class="content">
+        <a href="/home1.html"><img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/Earth.png" alt="breaking news" style="width:50%">
+        <h4>BREAKING NEWS</h4></a>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/Tech.png" alt="Lights" style="width:50%">
+        <h4>TECHNOLOGY NEWS</h4>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content">
+      <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/Lifestyle.jpg" alt="Nature" style="width:50%">
+        <h4>ENTERTAINMENT NEWS</h4>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="column cars">
+      <div class="content">
+        <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/history.png" alt="Car" style="width:50%">
+        <h4>HISTORICAL NEWS</h4></a>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/international.jpg" alt="Car" style="width:50%">
+        <h4>INTERNATIONAL NEWS</h4>
+      </div>
+    </div>
+    <div class="column cars">
+      <div class="content">
+      <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/local.jpg" alt="Car" style="width:50%">
+        <h4>LOCAL NEWS</h4>
+      </div>
+    </div>
+  
+    <div class="column people">
+      <div class="content">
+        <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/sprots.jpg" alt="Car" style="width:50%">
+        <h4>SPORTS NEWS</h4>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/weather.webp" alt="Car" style="width:50%">
+        <h4>WEATHER NEWS</h>
+      </div>
+    </div>
+    <div class="column people">
+      <div class="content">
+      <img src="https://newstracker1.s3.us-south.cloud-object-storage.appdomain.cloud/Business.jpg" alt="Car" style="width:50%">
+        <h4>BUSINESS NEWS</h4>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+ <script src="../static/sheets/Script grid.js"></script>
+ <br></div>
+<div class="footer">
+  <h2>NEWS TRACKER APPLICATION</h2>
+  
+</div>
+
+</body>
+</html>
