@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+nav.navbar {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #333;
+}
+nav.navbar .searchContainer {
+  display: inline-block;
+  padding: 0.5rem;
+
+  /* height:100px; */
+}
+
+nav.navbar .searchContainer input {
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+
+nav.navbar .searchContainer button {
+  border-radius: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  color: #000;
+  background:#fff;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+nav.navbar .searchContainer button:hover{
+  background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+  color:#fff;
+}
+
+nav.navbar .userProfile .logout {
+  float: right;
+  padding: 1rem;
+}
+
+nav.navbar .userProfile .logout a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.news #newsList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* flex-direction: column; */
+}
+
+.news #newsList a {
+  border-radius: 5px;
+  margin: 1vw;
+  box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #000000;
+}
+
+.news #newsList a li {
+  padding: 10px 5px;
+  overflow: scroll;
+}
+.news #newsList a li::-webkit-scrollbar {
+  display: none;
+}
+
+.news #newsList a li img {
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  object-fit: cover;
+}
